@@ -4,7 +4,7 @@ def calcular_faturamento_liquido(vendas_brutas, taxa_imposto, custos_operacionai
     # Calcula o imposto sobre as vendas
     valor_imposto = vendas_brutas * taxa_imposto
     # Calcula o faturamento líquido deduzindo impostos e custos
-    faturamento_liquido = vendas_brutas - valor_imposto + custos_operacionais
+    faturamento_liquido = vendas_brutas - valor_imposto - custos_operacionais
     return faturamento_liquido
     
 def verificar_bonus(faturamento, meta):
@@ -16,10 +16,10 @@ def verificar_bonus(faturamento, meta):
         print("Meta não atingida.")
 
 # PROGRAMA PRINCIPAL
-vendas_loja = 50000
-imposto = 0.15          # 15%
-custos = 12000
-meta_ano = "40000"      # Meta estipulada
+vendas_loja = 1250050
+imposto = 0.8     # 8%
+custos =   120025
+meta_ano = 10000  # Meta estipulada
 print("Iniciando análise financeira...")
 
 
